@@ -1,0 +1,51 @@
+.header h1 {
+    color:aliceblue;
+    font-family: Bahnschrift;
+    font-size: 100px;
+    font-weight: 60;
+}
+
+.header h2 {
+    color:aliceblue;
+    font-family: Bahnschrift;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.header h3 {
+    color:aliceblue;
+    font-family: Bahnschrift;
+    font-size: 30px;
+    font-weight: 40;
+    margin-top: -30px;
+}
+
+.header p {
+    color:aliceblue;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: 40;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: justify;
+}
+
+.about-button {
+    width: 100%;
+    z-index: 99;
+}
+
+.about-button button {
+    background-color: Transparent;
+    color:aliceblue;
+    border-color: aliceblue;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Bahnschrift;
+}
+
+.about-button button:hover {
+    background-color: aliceblue;
+    color: black;
+    transition: 1s;
+}

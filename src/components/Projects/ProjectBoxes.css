@@ -1,0 +1,18 @@
+.projectBoxesSection {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.projectBoxesTitle {
+    font-family: Bahnschrift;
+    font-size: 50px;
+    font-weight: 60;
+    margin-top: 60px;
+}
+
+.projectBoxes {
+    display:flex;
+    margin:auto;
+    padding: 10px;
+    justify-content: center;
+}

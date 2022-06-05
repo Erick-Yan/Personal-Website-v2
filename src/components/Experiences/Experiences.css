@@ -1,0 +1,46 @@
+.ExperiencesSection {
+    background-image: url("../../assets/experiences-background.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.title {
+    font-family: Bahnschrift;
+    font-size: 50px;
+    font-weight: 60;
+    margin-top: 60px;
+    color:aliceblue;
+}
+
+.button.is-rounded {
+    margin: 4px 0;
+}
+
+.vertical-timeline-element-title {
+    font-weight: 0;
+}
+
+.vertical-timeline-element-subtitle {
+    color: #00308F;
+}
+
+.vertical-timeline-element-content p {
+    font-size: 0.8rem !important;
+}
+
+.vertical-timeline-element-content p span {
+    border: 1px #00308F solid;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #00308F;
+    color: white;
+}
+
+.experienceDate {
+    color: aliceblue;
+}

@@ -1,0 +1,22 @@
+.contactSection {
+    background-color: #00538C;
+    padding: 5px;
+}
+
+.contactSection h6 {
+    font-family: Bahnschrift;
+    color: aliceblue;
+    font-weight: 10;
+}
+
+.contactButtons {
+    display:flex;
+    justify-content: center;
+}
+
+.contactButton {
+    height: auto;
+    width: auto;
+    margin: 10px;
+    transition: 0.5s filter ease-in;
+}

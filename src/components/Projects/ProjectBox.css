@@ -1,0 +1,60 @@
+.projectBox {
+    margin: 10px;
+    height: 39vh;
+    width: 40vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectBox img {
+    width: 100%;
+}
+
+.background {
+    transition: 0.25s filter ease-in;
+    opacity: 0.7;
+}
+
+.projectBox:hover .background{
+    filter:blur(2px) brightness(50%);
+    opacity: 1;
+}
+
+.projectBox h3 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    font-family: Bahnschrift;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 40;
+    padding: 10px;
+}
+
+.projectBox p {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    font-family: Bahnschrift;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 30;
+    padding: 30px;
+}
+
+.stacks {
+    position: absolute;
+    bottom: 5%;
+    display:flex;
+}
+
+.stack {
+    flex:1;
+    margin: 5px;
+}
+
+.stack img {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+}
