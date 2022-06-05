@@ -1,8 +1,7 @@
-import React, {useState} from "react";
-import {Fade} from "react-slideshow-image";
-import {Spring, useSpring, animated} from 'react-spring/';
-import {CSSTransition} from 'react-transition-group';
-import "react-slideshow-image/dist/styles.css";
+import React, {useEffect, useState} from "react";
+import { useTransition, animated, config } from "react-spring";
+// import {Fade} from "react-slideshow-image";
+// import "react-slideshow-image/dist/styles.css";
 
 import "./Slideshow.css";
 import StudentImage from '../../assets/Student.jpeg';
@@ -11,6 +10,7 @@ import ExplorerImage from "../../assets/Explorer.jpg";
 import Header from "./Header";
 
 const Slideshow = () => {
+    const [position, setPosition] = useState(0);
     const [introOpen, isIntroOpen] = useState(false);
     const [fadeState, toggleFadeState] = useState({
         fadeTransition: null,
@@ -34,27 +34,19 @@ const Slideshow = () => {
     }
 
     const images = [
-        {
-            url: StudentImage,
-            caption: "Student"
-        },
-        {
-            url: LeaderImage,
-            caption: "Leader"
-        },
-        {
-            url: ExplorerImage,
-            caption: "Explorer"
-        }
+        {id: 0, url: StudentImage}, 
+        {id: 1, url: LeaderImage}, 
+        {id: 2, url: ExplorerImage}
     ]
 
-    const properties = {
-        duration: 2000,
-        transitionDuration: 500,
-        infinite: true,
-        indicators: false,
-        arrows: false,
-    }
+    const transitions = useTransition(position, {
+        from: { opacity: 0 },
+        enter: { opacity: 1 },
+        leave: { opacity: 0 },
+        config: config.molasses,
+    })
+
+    useEffect(() => void setInterval(() => setPosition(index => (index + 1) % images.length), 4000), [])
 
     return (
         <div className="slideshow">
@@ -62,13 +54,15 @@ const Slideshow = () => {
                 style={{ transitionDuration: `${FADE_DURATION}ms` }}>
                 <Header introOpen={introOpen} toggleDrawer={toggleDrawer} />
             </div>
-            <Fade {...properties}>
-                {images.map((image, index) => (
-                <div className="each-fade" key={index}>
-                    <img src={image.url} />
-                </div>
-                ))}
-            </Fade>
+            {transitions((style, index) => (
+                <animated.div
+                    class="bg"
+                    style={{
+                        ...style,
+                        backgroundImage: `url(${images[index].url})`
+                    }}
+                />
+            ))}
         </div>
     );
 };

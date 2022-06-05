@@ -1,27 +1,27 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+// import { useSpring, animated } from 'react-spring';
 
 import "./Header.css";
 
 const Header = props => {
-    const fadeIn_h1 = useSpring({
-        from: {opacity: 0, marginTop: 50},
-        to: {opacity: 1, marginTop: 100},
-        config: {duration: 1000}
-    });
+    // const fadeIn_h1 = useSpring({
+    //     from: {opacity: 0, marginTop: 50},
+    //     to: {opacity: 1, marginTop: 100},
+    //     config: {duration: 1000}
+    // });
 
-    const fadeIn_h3 = useSpring({
-        from: {opacity: 0},
-        to: {opacity: 1},
-        config: {delay: 5000, duration: 2000}
-    });
+    // const fadeIn_h3 = useSpring({
+    //     from: {opacity: 0},
+    //     to: {opacity: 1},
+    //     config: {delay: 5000, duration: 2000}
+    // });
 
     return (
         <div className='header'>
             {!props.introOpen && (
                 <div>
-                    <animated.h1 style={{...fadeIn_h1}}>Erick Yan</animated.h1>
-                    <animated.h3 style={{...fadeIn_h3}}>My Portfolio.</animated.h3>
+                    <h1>Erick Yan</h1>
+                    <h3>My Portfolio.</h3>
                 </div>
             )}
             {props.introOpen && (

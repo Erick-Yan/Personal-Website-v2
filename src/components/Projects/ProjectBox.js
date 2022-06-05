@@ -23,18 +23,20 @@ const ProjectBox = props => {
     };
 
     return (
-        <div onMouseEnter={onHover} onMouseLeave={onLeave} className='projectBox'>
-            <a href={props.link} target="_blank" ><img className="background" src={props.image} /></a>
-            <h3 style={hoverStyle} >{props.title}</h3>
-            <p style={hoverStyle} >{props.description}</p>
-            <div className='stacks'>
-                {props.stack.map((fw, index) => {
-                    return (
-                        <div class='stack'><img src={fw} /></div>
-                    );
-                })}
+        <a href={props.link} target="_blank" >
+            <div onMouseEnter={onHover} onMouseLeave={onLeave} className='projectBox'>
+                <img className="background" src={props.image} />
+                <h3 style={hoverStyle} >{props.title}</h3>
+                <p style={hoverStyle} >{props.description}</p>
+                <div className='stacks'>
+                    {props.stack.map((fw, index) => {
+                        return (
+                            <div class='stack'><img src={fw} /></div>
+                        );
+                    })}
+                </div>
             </div>
-        </div>
+        </a>
     )
 };
 

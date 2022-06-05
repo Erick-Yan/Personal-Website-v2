@@ -1,12 +1,45 @@
 .slideshow {
     max-width: 100vw;
-    max-height: 98vh;
+    height: 98vh;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
 
-.each-fade {
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    filter: brightness(50%);
+  }
+
+.header {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    z-index:98;
+}
+
+.fade-wrapper {
+    transition: opacity ease-in-out;
+}
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
+
+/* .each-fade {
     width: 100vw;
     height: 100%;
     z-index:99;
@@ -40,4 +73,4 @@
 }
 .fade-in {
     opacity: 1;
-}
+} */
