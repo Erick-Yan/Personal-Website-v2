@@ -4,9 +4,9 @@ import { useTransition, animated, config } from "react-spring";
 // import "react-slideshow-image/dist/styles.css";
 
 import "./Slideshow.css";
-import StudentImage from '../../assets/Student.jpeg';
-import LeaderImage from "../../assets/Leader.jpg";
-import ExplorerImage from "../../assets/Explorer.jpg";
+import StudentImage from '../../assets/Student-min.jpeg';
+import LeaderImage from "../../assets/Leader-min.jpg";
+import ExplorerImage from "../../assets/Explorer-min.jpg";
 import Header from "./Header";
 
 const Slideshow = () => {
