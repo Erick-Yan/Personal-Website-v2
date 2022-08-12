@@ -1,8 +1,5 @@
 import React from 'react';
 import {SocialMediaIconsReact} from 'social-media-icons-react';
-import youtube from '../../assets/youtube.png';
-import github from '../../assets/github.png';
-import linkedin from '../../assets/linkedin.png';
 
 import "./Contacts.css";
 

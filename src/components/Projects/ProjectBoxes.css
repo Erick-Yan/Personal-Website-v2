@@ -12,6 +12,7 @@
 
 .projectBoxes {
     display:flex;
+    flex-direction: row;
     margin:auto;
     padding: 10px;
     justify-content: center;

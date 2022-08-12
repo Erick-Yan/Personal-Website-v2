@@ -29,10 +29,8 @@ const Header = props => {
                     <h2>Introduction</h2>
                     <p>
                         Welcome to My Portfolio! I'm a 2nd year Systems Design Engineering Student at the University 
-                        of Waterloo with a passion for learning new things and tackling challenging problems. Being in a coop program 
-                        has propelled me towards various exciting opportunities and experiences. I 
-                        have been fortunate enough to have worked in both the consulting and healthcare industries as a Software Engineering Intern.
-                        All in all, I'm glad that you've decided to peer into my work in progress which I hope to one day call my career. Want to learn more about me? Feel free to reach out 
+                        of Waterloo with a passion for all things technology and tackling new challenges. 
+                        Want to learn more about me? Feel free to reach out 
                         and connect, and maybe we can share some of our experiences with each another!
                     </p>
                 </div>

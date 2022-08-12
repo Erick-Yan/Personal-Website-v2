@@ -1,7 +1,6 @@
 .projectBox {
-    margin: 10px;
-    height: 39vh;
-    width: 40vw;
+    margin: 30px;
+    min-height: 39vh;
     position: relative;
     overflow: hidden;
 }
@@ -20,10 +19,23 @@
     opacity: 1;
 }
 
-.projectBox h3 {
+.projectBox:hover .projectContext{
+    opacity: 1;
+}
+
+.projectContext {
     position: absolute;
-    top: 5%;
+    top: 1%;
     width: 100%;
+    opacity: 0;
+    padding: 10px;
+}
+
+.projectContext:hover {
+    opacity: 1;
+}
+
+.projectContext h3 {
     font-family: Bahnschrift;
     color: aliceblue;
     font-size: 25px;
@@ -31,30 +43,30 @@
     padding: 10px;
 }
 
-.projectBox p {
-    position: absolute;
-    top: 30%;
-    width: 100%;
+.projectContext .description {
     font-family: Bahnschrift;
     color: aliceblue;
     font-size: 15px;
     font-weight: 30;
-    padding: 30px;
 }
 
 .stacks {
-    position: absolute;
-    bottom: 5%;
-    display:flex;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
 }
 
-.stack {
-    flex:1;
-    margin: 5px;
-}
-
-.stack img {
-    height: 3vw;
-    width: 3vw;
-    border-radius: 50%;
+.stacks p {
+    border-radius: 20px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: darkcyan;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
