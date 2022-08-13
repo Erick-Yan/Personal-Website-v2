@@ -4,7 +4,7 @@
 }
 
 .projectBoxesTitle {
-    font-family: Bahnschrift;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     font-weight: 60;
     margin-top: 60px;
@@ -16,4 +16,10 @@
     margin:auto;
     padding: 10px;
     justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .projectBoxes {
+        flex-direction: column;
+    }
 }

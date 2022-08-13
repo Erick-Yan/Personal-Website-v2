@@ -51,6 +51,7 @@ const ProjectBoxes = props => {
             </div>
             <div className='projectBoxes'>
                 <ProjectBox className='box' {...projects[2]} />
+                <br></br>
                 <ProjectBox className='box' {...projects[3]} />
             </div>
         </div>

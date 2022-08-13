@@ -1,6 +1,6 @@
 .projectBox {
-    margin: 30px;
-    min-height: 39vh;
+    margin: 5px;
+    max-height: 39vh;
     position: relative;
     overflow: hidden;
 }
@@ -36,7 +36,7 @@
 }
 
 .projectContext h3 {
-    font-family: Bahnschrift;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     font-size: 25px;
     font-weight: 40;
@@ -44,7 +44,7 @@
 }
 
 .projectContext .description {
-    font-family: Bahnschrift;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
     font-size: 15px;
     font-weight: 30;
@@ -60,7 +60,6 @@
 
 .stacks p {
     border-radius: 20px;
-    font-size: 15px;
     color: aliceblue;
     background-color: darkcyan;
     padding-left: 10px;
@@ -69,4 +68,37 @@
     padding-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+@media (max-width: 1000px) {
+    .background {
+        filter:blur(5px) brightness(50%);
+        opacity: 0.7;
+    }
+
+    .projectContext {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 550px) {
+    .projectContext h3 {
+        font-size: 18px;
+        font-weight: 40;
+        padding: 10px;
+    }
+
+    .stacks p {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    
+    .projectContext .description {
+        font-size: 10px;
+    }
 }
