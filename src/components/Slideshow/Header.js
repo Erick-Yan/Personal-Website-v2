@@ -28,10 +28,13 @@ const Header = props => {
                 <div>
                     <h2>Introduction</h2>
                     <p>
-                        Welcome to My Portfolio! I'm a 2nd year Systems Design Engineering Student at the University 
-                        of Waterloo with a passion for all things technology and tackling new challenges. 
-                        Want to learn more about me? Feel free to reach out 
-                        and connect, and maybe we can share some of our experiences with each another!
+                        Welcome to My Portfolio! I'm a 3rd year Systems Design Engineering Student at the University 
+                        of Waterloo with a passion for using technology to solve the most pressing issues facing our world.
+                        My experiences have spanned across multiple sectors while taking on the role of a 
+                        full-stack engineer, data engineer, and data scientist just to name a few!
+                        From improving the livelihood of COPD patients to enabling access to credit and lending benefits for 
+                        everyone, I've been fortunate enough to have seen the impact my work has had on all scales! 
+                        Want to learn more about me? Feel free to reach out and connect!
                     </p>
                 </div>
             )}

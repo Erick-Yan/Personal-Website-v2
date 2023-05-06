@@ -9,12 +9,11 @@ const Skills = () => {
         {
             title: "Application Development",
             stacks: [
-                {framework: "React", value: 20, color: "primary"}, 
-                {framework:"Vue", value: 20, color: "secondary"}, 
-                {framework:"Flask", value: 25, color: "success"}, 
-                {framework:"MongoDB", value: 10, color: "danger"}, 
+                {framework: "Flask", value: 30, color: "primary"}, 
+                {framework:"React", value: 20, color: "secondary"}, 
+                {framework:"Vue", value: 15, color: "success"}, 
+                {framework:"Node", value: 15, color: "info"}, 
                 {framework:"Spring", value: 10, color: "warning"}, 
-                {framework:"Node", value: 5, color: "info"}, 
                 {framework:"Express", value: 10, color: "dark"}
             ]
         },
@@ -26,6 +25,17 @@ const Skills = () => {
                 {framework:"Scikit-Learn", value: 20, color: "success"}, 
                 {framework:"Spacy", value: 20, color: "danger"}, 
                 {framework:"Matplotlib", value: 10, color: "warning"}
+            ]
+        },
+        {
+            title: "Data Engineering & Database Design",
+            stacks: [
+                {framework:"Azure ML", value: 20, color: "primary"}, 
+                {framework:"Airflow", value: 20, color: "secondary"}, 
+                {framework:"Snowflake", value: 20, color: "success"}, 
+                {framework:"SQLAlchemy", value: 20, color: "danger"}, 
+                {framework:"PostgreSQL", value: 15, color: "warning"},
+                {framework:"dbt", value: 5, color: "dark"}
             ]
         },
         {
