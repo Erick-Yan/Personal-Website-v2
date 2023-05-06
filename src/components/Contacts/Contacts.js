@@ -23,7 +23,7 @@ const Contacts = props => {
                 <SocialMediaIconsReact {...buttonStyle} icon="linkedin" iconColor="#00538C" size="48" url="https://www.linkedin.com/in/erick-yan/"/>
                 </div>
             </div>
-            <h6>&copy; Erick Yan 2022</h6>
+            <h6>&copy; Erick Yan 2023</h6>
         </section>
     );
 };
